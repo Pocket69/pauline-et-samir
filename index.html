@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Veux-tu être mon valentin ? 🫶</title>
+  <style>
+    body {
+      text-align: center;
+      background-color: #ffe6f0;
+      font-family: Arial, sans-serif;
+      margin-top: 100px;
+    }
+
+    h1 {
+      font-size: 50px;
+    }
+
+    button {
+      font-size: 20px;
+      padding: 10px 20px;
+      margin: 20px;
+      border-radius: 10px;
+      border: none;
+      cursor: pointer;
+    }
+
+    #yes {
+      background-color: #ff4d6d;
+      color: white;
+    }
+
+    #no {
+      background-color: #999;
+      color: white;
+      position: absolute;
+    }
+  </style>
+</head>
+
+<body>
+
+<h1>Samir, veux-tu être mon valentin ? ❤️</h1>
+
+<button id="yes" onclick="alert('Je t’aime ❤️')">Oui</button>
+<button id="no">Non</button>
+
+<script>
+  const noBtn = document.getElementById("no");
+
+  noBtn.addEventListener("mouseover", function() {
+    noBtn.style.top = Math.random() * window.innerHeight + "px";
+    noBtn.style.left = Math.random() * window.innerWidth + "px";
+  });
+</script>
+
+</body>
+</html>
